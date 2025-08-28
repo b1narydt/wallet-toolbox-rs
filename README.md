@@ -1,19 +1,5 @@
-# wallet-toolbox-rs
+THIS REPO IS AI SLOP.
 
-Rust translation of the @bsv/wallet-toolbox codebase.
+IT DOES NOT WORK.
 
-Workspace crates:
-- wallet-core
-- wallet-storage
-- wallet-storage-sqlite
-- wallet-storage-mysql
-- wallet-storage-indexeddb
-- wallet-monitor
-- wallet-wab-client
-- wallet-web
-- wallet-client
-- wallet-mobile
-
-Build:
-- Native: `cargo build --workspace`
-- WASM (client/mobile crates will be wasm-ready later): TBD
+HELP ME ROY MURPHY YOUR MY ONLY HOPE!

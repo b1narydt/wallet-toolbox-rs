@@ -1,0 +1,16 @@
+[package]
+name = "wallet-mobile"
+version = "0.1.0"
+edition = "2021"
+license = "SEE LICENSE IN license.md"
+
+[lib]
+path = "src/lib.rs"
+crate-type = ["rlib"]
+
+[features]
+wasm = []
+
+[dependencies]
+wallet-client = { path = "../wallet-client" }
+wallet-core = { path = "../wallet-core" }

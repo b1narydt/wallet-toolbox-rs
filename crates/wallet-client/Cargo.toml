@@ -1,0 +1,15 @@
+[package]
+name = "wallet-client"
+version = "0.1.0"
+edition = "2021"
+license = "SEE LICENSE IN license.md"
+
+[lib]
+path = "src/lib.rs"
+crate-type = ["rlib"]
+
+[features]
+wasm = []
+
+[dependencies]
+wallet-core = { path = "../wallet-core" }

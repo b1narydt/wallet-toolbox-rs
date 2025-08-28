@@ -1,0 +1,11 @@
+[package]
+name = "wallet-storage-sqlite"
+version = "0.1.0"
+edition = "2021"
+license = "SEE LICENSE IN license.md"
+
+[lib]
+path = "src/lib.rs"
+
+[dependencies]
+wallet-storage = { path = "../wallet-storage", features = ["sqlite"] }

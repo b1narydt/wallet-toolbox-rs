@@ -1,0 +1,8 @@
+[package]
+name = "wallet-core"
+version = "0.1.0"
+edition = "2021"
+license = "SEE LICENSE IN license.md"
+
+[lib]
+path = "src/lib.rs"

@@ -1,0 +1,21 @@
+[workspace]
+members = [
+    "crates/wallet-core",
+    "crates/wallet-storage",
+    "crates/wallet-storage-sqlite",
+    "crates/wallet-storage-mysql",
+    "crates/wallet-storage-indexeddb",
+    "crates/wallet-monitor",
+    "crates/wallet-wab-client",
+    "crates/wallet-web",
+    "crates/wallet-client",
+    "crates/wallet-mobile",
+]
+resolver = "2"
+
+[workspace.package]
+edition = "2021"
+version = "0.1.0"
+authors = ["BSV Blockchain"]
+license = "SEE LICENSE IN license.md"
+name = "wallet-toolbox-rs"

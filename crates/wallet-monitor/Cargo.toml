@@ -1,0 +1,11 @@
+[package]
+name = "wallet-monitor"
+version = "0.1.0"
+edition = "2021"
+license = "SEE LICENSE IN license.md"
+
+[lib]
+path = "src/lib.rs"
+
+[dependencies]
+wallet-core = { path = "../wallet-core" }

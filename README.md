@@ -1,5 +1,1 @@
-THIS REPO IS AI SLOP.
-
-IT DOES NOT WORK.
-
-HELP ME ROY MURPHY YOU'RE MY ONLY HOPE!
+Test Implementaion of @bsv/wallet-toolbox in Rust

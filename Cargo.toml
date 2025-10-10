@@ -9,7 +9,7 @@ members = [
     "crates/wallet-wab-client",
     "crates/wallet-web",
     "crates/wallet-client",
-    "crates/wallet-mobile",
+    "crates/wallet-mobile", "crates/wallet-services",
 ]
 resolver = "2"
 

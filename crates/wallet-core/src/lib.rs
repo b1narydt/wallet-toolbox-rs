@@ -1,42 +1,49 @@
-//! Core domain types and wallet logic (placeholder)
+//! Core domain types and wallet logic
 
-pub fn version() -> &'static str { "0.0.1-dev" }
+pub fn version() -> &'static str { "0.1.0" }
 
-// SDK namespace
+// SDK types and interfaces
 pub mod sdk;
 
-// Utility namespace
+// Core wallet methods (createAction, signAction, etc.)
+pub mod methods;
+
+// BEEF (Background Evaluation Extended Format) implementation
+pub mod beef;
+
+// Bitcoin transaction primitives (pure Rust for performance)
+pub mod transaction;
+
+// Cryptographic operations (ECDSA signing, key derivation)
+pub mod crypto;
+
+// BRC-42/43 key derivation
+pub mod keys;
+
+// Wallet managers (SimpleWalletManager, WalletSettingsManager, etc.)
+pub mod managers;
+
+// Signer methods (buildSignableTransaction, completeSignedTransaction, etc.)
+pub mod signer;
+
+// Utility functions and helpers
 pub mod utility;
 
-// Core wallet namespaces
+// WAB (Wallet Authentication Bridge) client
+pub mod wab_client;
+
+// Main wallet orchestration
 pub mod wallet;
-pub mod setup;
-pub mod managers;
-pub mod signer; // signer has methods/* and WalletSigner type
 
-// Public re-exports to mirror TS index boundaries
-pub use wallet::Wallet;
-pub use setup::{Setup, SetupClient, SetupWallet};
-pub use signer::WalletSigner;
-pub use managers::{
-    WalletPermissionsManager,
-    WalletAuthenticationManager,
-    SimpleWalletManager,
-    CWIStyleWalletManager,
-};
-
-// Storage namespace (placeholder)
-pub mod storage {
-    pub mod index_all {}
-    pub mod index_client {}
-    pub mod index_mobile {}
-}
-
-// Services namespace
-pub mod services;
-
-// Monitor namespace
+// Monitor for transaction tracking
 pub mod monitor;
 
-// WAB client namespace (placeholder)
-pub mod wab_client;
+// Setup and initialization
+pub mod setup;
+
+// Service integrations (placeholder - actual services in wallet-services crate)
+pub mod services;
+
+// Tauri command handlers for metanet-desktop integration
+#[cfg(feature = "tauri")]
+pub mod tauri_commands;

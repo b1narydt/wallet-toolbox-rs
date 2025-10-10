@@ -8,4 +8,14 @@ license = "SEE LICENSE IN license.md"
 path = "src/lib.rs"
 
 [dependencies]
-wallet-storage = { path = "../wallet-storage", features = ["sqlite"] }
+wallet-storage = { path = "../wallet-storage", features = ["rusqlite"] }
+rusqlite = { version = "0.32", features = ["bundled", "blob", "chrono"] }
+tokio = { version = "1", features = ["full"] }
+async-trait = "0.1"
+chrono = { version = "0.4", features = ["serde"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+thiserror = "1"
+
+[dev-dependencies]
+tempfile = "3"
